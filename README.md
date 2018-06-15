@@ -1,7 +1,7 @@
 # Web_service_prototype
 There is a web service prototype.
 
-###How to run:
+### How to run:
 
 1. `./setup_dependencies.sh`
 
