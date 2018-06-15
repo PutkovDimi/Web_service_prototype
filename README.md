@@ -9,7 +9,7 @@ There is a web service prototype.
 
 3. `python3 run.py`
 
-Now you've run local server with app. By default address  you may create task. By address "/get_status<N>", where N = number of task you may get json-formatted string with info about the task. N = number of last task. 
+Now you've run local server with app. By default address  you may create task. By address */get_statusN*, where N = number of task which you may get json-formatted string with info about the task. N = number of last task. 
 
 It realizes the idea that when you create task, it's automatically added into queue, and it waits for its queue. It works as an organizer - it calculates when it starts to complete and when it finishes.
 
