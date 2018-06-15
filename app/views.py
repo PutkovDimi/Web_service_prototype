@@ -19,7 +19,7 @@ def create_task():
         db.session.add(task)
         db.session.commit()
         max_numb += 1
-    return render_template("add_task", number=max_numb)
+    return render_template("add_task.html", number=max_numb)
 
 
 @app.route('/get_status/', methods=["GET", "POST"])
