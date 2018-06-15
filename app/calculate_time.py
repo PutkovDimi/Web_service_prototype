@@ -36,7 +36,7 @@ def calculate_time(id, create_time):
 
 def get_time_of_end(id):
     start_time = datetime.strptime(models.Task.query.get(id).start_time, "%H:%M:%S.%f")
-    time_of_end = start_time + timedelta(seconds=models.Task.query.get(id).execution_time)
+    time_of_end = start_time + timedelta(seconds=int(models.Task.query.get(id).execution_time))
     return time_of_end.time()
 
 
